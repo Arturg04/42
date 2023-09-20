@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_non_printable.c                          :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/20 21:38:31 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/20 23:12:10 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/09/19 23:41:07 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/09/20 23:13:49 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,18 +17,17 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putstr_non_printable(char *str)
+void	ft_putnbr(int nb)
 {
-	while (*str)
+	int	negative;
+
+	negative = 1;
+	if (nb < 0)
 	{
-		if (*str < 32 || *str > 126)
-		{
-			ft_putchar('\\');
-			ft_putchar("0123456789abcdef"[(unsigned char)*str / 16]);
-			ft_putchar("0123456789abcdef"[(unsigned char)*str % 16]);
-		}
-		else
-			ft_putchar(*str);
-		str++;
+		ft_putchar('-');
+		negative *= -1;
 	}
+	if (nb > 10 || nb < -10)
+		ft_putnbr(nb / 10 * negative);
+	ft_putchar(nb % 10 * negative + 48);
 }

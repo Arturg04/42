@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 20:21:24 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/20 20:46:14 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/20 23:12:19 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,3 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// 	char teste[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
-// 	ft_strcapitalize(teste);
-// }

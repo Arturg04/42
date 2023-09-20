@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 21:43:40 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/20 22:52:55 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/20 23:12:00 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,9 +89,3 @@ void	*ft_print_memory(void *addr, unsigned int size)
 	}
 	return (addr);
 }
-
-// int	main(void)
-// {
-// 	char teste[] = "oikdncs osind \nidns ise pseifn pgkmer";
-// 	ft_print_memory(teste, sizeof(teste) - 1);
-// }

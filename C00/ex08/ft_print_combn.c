@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 23:49:33 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/20 00:20:57 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/20 23:13:12 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,16 +51,3 @@ void	ft_print_combn(int n)
 		i--;
 	}
 }
-
-// int	main(void)
-// {
-// 	ft_print_combn(1); ft_putchar('\n');
-// 	ft_print_combn(2); ft_putchar('\n');
-// 	ft_print_combn(3); ft_putchar('\n');
-// 	ft_print_combn(4); ft_putchar('\n');
-// 	ft_print_combn(5); ft_putchar('\n');
-// 	ft_print_combn(6); ft_putchar('\n');
-// 	ft_print_combn(7); ft_putchar('\n');
-// 	ft_print_combn(8); ft_putchar('\n');
-// 	ft_print_combn(9);
-// }
