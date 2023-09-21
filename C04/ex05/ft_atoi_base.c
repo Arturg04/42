@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/20 23:34:42 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/21 00:08:47 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/21 18:52:42 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,49 +50,47 @@ int	power(int nbr, int power)
 	return (res);
 }
 
-int	position(char c, char *base)
+int	atoibase2(char *str, char *base, int strlen, int baselen)
 {
 	int	i;
+	int	j;
+	int	res;
 
 	i = -1;
-	while (base[++i])
+	res = 0;
+	while (str[++i])
 	{
-		if (c == base[i])
-			return (i);
+		j = -1;
+		while (base[++j])
+		{
+			if (str[i] == base[j])
+				break ;
+		}
+		if (base[j] == 0)
+			return (res);
+		res = res + j * power(baselen, --strlen);
 	}
-	return (-1);
+	return (res);
 }
 
 int	ft_atoi_base(char *str, char *base)
 {
 	int	baselen;
-	int	strlen;
 	int	res;
-	int	i;
-	int	pos;
+	int	neg;
 
-	i = -1;
+	neg = 1;
 	res = 0;
 	baselen = ft_strlen(base);
-	strlen = ft_strlen(str);
 	if (baselen < 2 || !check(base))
 		return (0);
 	while (*str == ' ')
 		str++;
 	while (*str == '+' || *str == '-')
-		res = -res; //está mal
-	while (--strlen >= 0 && str[++i])
 	{
-		pos = position(str[i], base);
-		if (pos < 0 && i == 0)
-			return (0);
-		else if (pos >= 0)
-			res = res + pos * power(baselen, strlen);
+		if (*str++ == '-')
+			neg = -neg;
 	}
+	res = atoibase2(str, base, ft_strlen(str), baselen) * neg;
 	return (res);
-}
-
-int main(void)
-{
-	ft_atoi_base("bb", "ab");
 }
