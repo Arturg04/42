@@ -6,16 +6,31 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/21 22:42:16 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/22 00:10:43 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/22 19:30:42 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-//#include "ft_convert_base2.c"
+#include "ft_convert_base2.c"
 
 int	ft_atoi_base(char *str, char *base);
 int	check(char *base);
 int	ft_strlen(char *str);
+
+void	getbase(int nbr, int index, char *dest, char *base)
+{
+	int	size;
+
+	size = ft_strlen(base);
+	if (nbr < size)
+	{
+		dest[index] = base[nbr % size];
+		dest[index + 1] = 0;
+		return ;
+	}
+	getbase(nbr / size, index + 1, dest, base);
+	dest[index] = base[nbr % size];
+}
 
 int	checksize(int nbr, int baselen)
 {
@@ -43,7 +58,7 @@ char	*ft_rev_int_tab(char *tab)
 	if (tab[0] == '-')
 	{
 		i++;
-		size--;
+		size++;
 	}
 	while (size / 2 > i)
 	{
@@ -61,28 +76,21 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 	int		nb;
 	int		neg;
 	int		i;
+	int		size;
 
 	neg = 1;
 	i = 0;
+	size = ft_strlen(base_to);
 	if (!check(base_from) || !check(base_from))
 		return (NULL);
 	nb = ft_atoi_base(nbr, base_from);
-	arr = (char *)malloc(checksize(nb, ft_strlen(base_to)) + 1);
+	arr = (char *)malloc(checksize(nb, size) + 1);
 	if (nb < 0)
 	{
 		neg = -neg;
 		arr[i++] = '-';
 	}
-	while (nb != 0)
-	{
-		arr[i++] = base_to[nb % ft_strlen(base_to) * neg];
-		nb = nb / ft_strlen(base_to);
-	}
-	arr[i] = 0;
+	getbase(nb / size * neg, i + 1, arr, base_to);
+	arr[i] = base_to[nb % size * neg];
 	return (ft_rev_int_tab(arr));
 }
-
-// int	main(void)
-// {
-// 	ft_convert_base("-21", "0123456789", "01");
-// }
