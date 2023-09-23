@@ -5,47 +5,28 @@
 #                                                     +:+ +:+         +:+      #
 #    By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/09/23 17:17:32 by Arturg04          #+#    #+#              #
-#    Updated: 2023/09/23 17:17:33 by Arturg04         ###   ########.fr        #
+#    Created: 2023/09/23 17:11:12 by Arturg04          #+#    #+#              #
+#    Updated: 2023/09/23 17:31:31 by Arturg04         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 
-AR = ar rcs
-
-RM = rm -f
-
-CFLAGS = -Wall -Wextra -Werror
-
-HEADER = ./includes/
+SRC = *.c
 
 PRE = srcs/
 
-SRC = ft_putchar.c ft_swap.c ft_putstr.c ft_strlen.c ft_strcmp.c
+SRCS = $(addprefix $(PRE), $(SRC))
 
-OBJ = $(SRC:.c=.o)
+FLAGS = -Wextra -Werror -Wall
 
-SRCS = ${addprefix ${PRE}, ${SRC}}
+NAME = ft_display_file
 
-OBJS = ${SRCS:.c=.o}
-
-NAME = libft.a
-
-
-all:		${NAME}
-
-.c.o:
-			${CC} ${CFLAGS} -c -I $(HEADER) $< -o ${<:.c=.o}
-
-${NAME}:	${OBJS}
-			${AR} ${NAME} ${OBJS}
+all:
+			$(CC) $(FLAGS) $(SRCS) -o $(NAME)
 
 clean:
-			rm -f ${OBJS}
+			rm -f *.o
 
-fclean:		clean
-			rm -f ${NAME}
-
-re:			fclean ${NAME}
-
+fclean:
+			rm -f $(NAME)
