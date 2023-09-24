@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/23 16:48:51 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/23 17:31:22 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/23 19:26:34 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ void	printfile(char *str)
 	bytes = read(file, &c, sizeof(c));
 	while (bytes > 0)
 	{
-		bytes = read(file, &c, sizeof(c));
 		write(1, &c, sizeof(c));
+		bytes = read(file, &c, sizeof(c));
 	}
 	close(file);
 }
