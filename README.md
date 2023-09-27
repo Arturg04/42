@@ -41,6 +41,25 @@ Here's a list of C programming projects I've worked on to prepare for the piscin
 ## Piscine
 
 
+### Status
+
+| Assignment            | Coverage                   | Accuracy         |
+| :-------------------- | :------------------------: | :--------------: |
+| C00                   | 9/9                        | 9/9              |
+| C01                   | 9/9                        | 9/9              |
+| C02                   | 13/13                      | 11/13            |
+| C03                   | 6/6                        | 6/6              |
+| C04                   | 6/6                        | 6/6              |
+| C05                   | 9/9                        | 8/9              |
+| C06                   | 4/4                        | 4/4              |
+| C07                   | 5/6                        | 3/6              |
+| C08                   | 6/6                        | 4/6              |
+| C09                   | 0/3                        | Not yet rated    |
+| C10                   | 0/4                        | Not yet rated    |
+| C11                   | 0/8                        | Not yet rated    |
+| C12                   | 0/18                       | Not yet rated    |
+| C13                   | 0/8                        | Not yet rated    |
+
 ## Student_Preparation
 
 
