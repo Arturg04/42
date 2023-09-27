@@ -1,0 +1,5 @@
+.gitingore
+a.out
+.vscode
+git_ignore.sh
+teste.c
