@@ -39,4 +39,4 @@ Welcome to my portfolio repository, where I showcase the projects and wikis I've
 If you have any questions or would like to get in touch with me, feel free to reach out:
 
 - Email: artur.13.goncalves@gmail.com
-- LinkedIn: [Your LinkedIn Profile](www.linkedin.com/in/arturg04/)
+- LinkedIn: [Artur Gonçalves](https://www.linkedin.com/in/arturg04/)
