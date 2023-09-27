@@ -15,13 +15,13 @@ Welcome to my portfolio repository, where I showcase the projects and wikis I've
 - [Contact](#contact)
 
 
-## Piscine Preparation
+## Piscine_Preparation
 
 
 ## Piscine
 
 
-## Student Preparation
+## Student_Preparation
 
 
 ## Student
@@ -38,5 +38,5 @@ Welcome to my portfolio repository, where I showcase the projects and wikis I've
 
 If you have any questions or would like to get in touch with me, feel free to reach out:
 
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/your-profile/)
+- Email: artur.13.goncalves@gmail.com
+- LinkedIn: [Your LinkedIn Profile](www.linkedin.com/in/arturg04/)
