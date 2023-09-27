@@ -18,6 +18,26 @@ Welcome to my portfolio repository, where I showcase the projects and wikis I've
 ## Piscine_Preparation
 
 
+In preparation for the piscine program, I aimed to familiarize myself with the loops and conditional statements commonly used in C.
+Coming from a background in C#, this served as a way to adapt to C syntax and its inherent complexity as a primary programming language.
+
+
+Here's a list of C programming projects I've worked on to prepare for the piscine:
+
+- [DoWhile.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/DoWhile.c)
+- [EnumBool.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/EnumBool.c)
+- [For.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/For.c)
+- [Functions.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/Functions.c)
+- [HelloWorld.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/HelloWorld.c)
+- [If.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/If.c)
+- [maior2V.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/maior2V.c): Brief description or tagline for the project.
+- [maior3V.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/maior3V.c): Brief description or tagline for the project.
+- [Média.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/media.c): Brief description or tagline for the project.
+- [multiplicar2V.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/multiplicar2V.c): Brief description or tagline for the project.
+- [Switch.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/Switch.c): Brief description or tagline for the project.
+- [While.c](https://github.com/Arturg04/42/blob/main/Piscine_Preparation/While.c): Brief description or tagline for the project.
+
+
 ## Piscine
 
 
