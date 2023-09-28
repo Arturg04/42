@@ -88,8 +88,8 @@ The goal is to learn how the standard functions of C programming work by coding 
 
 ft_bzero is a C function that sets a block of memory to zero.
 ```
-void			ft_bzero(void *restrict src,
-					unsigned int n);
+void	ft_bzero(void *restrict src,
+		unsigned int n);
 ```
 
 
@@ -98,10 +98,10 @@ void			ft_bzero(void *restrict src,
 
 ft_memccpy is a C function that is used to copy memory from one location to another until a specified character is encountered.
 ```
-void			*ft_memccpy(void *restrict dest,
-					const void *restrict src,
-					int c,
-					unsigned int n);
+void	*ft_memccpy(void *restrict dest,
+		const void *restrict src,
+		int c,
+		unsigned int n);
 ```
 
 
@@ -110,9 +110,9 @@ void			*ft_memccpy(void *restrict dest,
 
 ft_memchr
 ```
-void			*ft_memchr(const void *restrict src,
-					int c,
-					unsigned int n);
+void	*ft_memchr(const void *restrict src,
+		int c,
+		unsigned int n);
 ```
 
 
@@ -121,9 +121,9 @@ void			*ft_memchr(const void *restrict src,
 
 ft_memcmp
 ```
-int				ft_memcmp(const void *restrict str1,
-					const void *restrict str2,
-					unsigned int n);
+int	ft_memcmp(const void *restrict str1,
+		const void *restrict str2,
+		unsigned int n);
 ```
 
 
@@ -132,9 +132,9 @@ int				ft_memcmp(const void *restrict str1,
 
 ft_memcpy is a C function that is used to copy memory from one location to another.
 ```
-void			*ft_memcpy(void *restrict dest,
-					void const *restrict src,
-					unsigned int n);
+void	*ft_memcpy(void *restrict dest,
+		void const *restrict src,
+		unsigned int n);
 ```
 
 
@@ -143,9 +143,9 @@ void			*ft_memcpy(void *restrict dest,
 
 ft_memmove is a C function that is used to copy memory from one location to another but in a safer way because take in count the overlap.
 ```
-void			*ft_memmove(void *restrict dest,
-					const void *restrict src,
-					unsigned int n);
+void	*ft_memmove(void *restrict dest,
+		const void *restrict src,
+		unsigned int n);
 ```
 
 
@@ -154,9 +154,9 @@ void			*ft_memmove(void *restrict dest,
 
 ft_memset is a C function that is used set block of memory to a specific values.
 ```
-void			*ft_memset(void *restrict src,
-					int c,
-					unsigned int n);
+void	*ft_memset(void *restrict src,
+		int c,
+		unsigned int n);
 ```
 
 
@@ -166,8 +166,8 @@ void			*ft_memset(void *restrict src,
 ft_strlcpy 
 ```
 unsigned int	ft_strlcpy(char *restrict dest,
-					const char *restrict src,
-					unsigned int size);
+			const char *restrict src,
+			unsigned int size);
 ```
 
 
