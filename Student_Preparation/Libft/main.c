@@ -8,5 +8,6 @@ int main(void) {
 	ft_memset(teste, 'c', 10);
 	ft_bzero(teste, 10);
 	ft_memcpy(teste, "ab", 10);
+	ft_memccpy(teste, "abc", 'd', 10);
 }
 
