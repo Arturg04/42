@@ -79,7 +79,7 @@ The goal is to learn how the standard functions of C programming work by coding 
 
 -Functions:
 
-- [ft_bzero.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_bzero.c)
+- [ft_bzero.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_bzero.c)
 
 ft_bzero is a C function that sets a block of memory to zero.
 ```
@@ -87,7 +87,7 @@ void	ft_bzero(void *restrict src, unsigned int n);
 ```
 
 
-- [ft_memccpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memccpy.c)
+- [ft_memccpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memccpy.c)
 
 ft_memccpy is a C function that is used to copy memory from one location to another until a specified character is encountered.
 ```
@@ -95,7 +95,7 @@ void	*ft_memccpy(void *restrict dest, const void *restrict src, int c, unsigned 
 ```
 
 
-- [ft_memcpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memcpy.c)
+- [ft_memcpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memcpy.c)
 
 ft_memcpy is a C function that is used to copy memory from one location to another.
 ```
@@ -103,7 +103,7 @@ void	*ft_memcpy(void *restrict dest, void const *restrict src, unsigned int n);
 ```
 
 
-- [ft_memmove.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memmove.c)
+- [ft_memmove.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memmove.c)
 
 ft_memmove is a C function that is used to copy memory from one location to another but in a safer way because take in count the overlap.
 ```
@@ -111,7 +111,7 @@ void *ft_memmove(void *restrict dest, const void *restrict src, unsigned int n);
 ```
 
 
-- [ft_memset.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memset.c)
+- [ft_memset.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memset.c)
 
 ft_memset is a C function that is used set block of memory to a specific values.
 ```
