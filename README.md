@@ -70,6 +70,27 @@ Piscine_Moulinette is a test runner for 42 assignments, providing automated test
 
  - Repositorie: [Piscine_Moulinette] (https://github.com/Arturg04/Piscine_Moulinette)
 
+### LeetCode
+
+### Libft
+
+The first project at 42 programming school is called libft, and it consists of creating a C library with all the base functions that students will use in future projects.
+The goal is to learn how the standard functions of C programming work by coding them from scratch and creating our very own library.
+
+-Functions:
+´´´
+-ft_bzero
+	ft_bzero is a C library function that sets a block of memory to zero
+- [ft_bzero.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_bzero.c)
+´´´
+
+- [ft_memccpy.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memccpy.c)
+- [ft_memcpy.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memcpy.c)
+- [ft_memmove.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memmove)
+
+
+
+-Project: [Libft] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft)
 
 ## Student
 
