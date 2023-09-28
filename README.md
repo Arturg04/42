@@ -80,10 +80,10 @@ The goal is to learn how the standard functions of C programming work by coding 
 -Functions:
 
 - [ft_bzero.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_bzero.c)
-```
-ft_bzero is a C function that sets a block of memory to zero.
 
-void	ft_bzero(void *restrict src, unsigned int n)
+ft_bzero is a C function that sets a block of memory to zero.
+```
+void	ft_bzero(void *restrict src, unsigned int n);
 ``` 
 
 - [ft_memccpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memccpy.c)
