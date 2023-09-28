@@ -68,7 +68,7 @@ Here's a list of C programming projects I've worked on to prepare for the piscin
 
 Piscine_Moulinette is a test runner for 42 assignments, providing automated tests for whole assignment with one command. The goal is to make thorough checking before submitting the assignments, with ease.
 
- - Repositorie: [Piscine_Moulinette] (https://github.com/Arturg04/Piscine_Moulinette)
+ - Repositorie: [Piscine_Moulinette](https://github.com/Arturg04/Piscine_Moulinette)
 
 ### LeetCode
 
@@ -78,19 +78,18 @@ The first project at 42 programming school is called libft, and it consists of c
 The goal is to learn how the standard functions of C programming work by coding them from scratch and creating our very own library.
 
 -Functions:
-´´´
--ft_bzero
-	ft_bzero is a C library function that sets a block of memory to zero
-- [ft_bzero.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_bzero.c)
-´´´
-
-- [ft_memccpy.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memccpy.c)
-- [ft_memcpy.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memcpy.c)
-- [ft_memmove.c] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memmove)
 
 
+´ft_bzero´ is a C library function that sets a block of memory to zero
+- [ft_bzero.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_bzero.c)
 
--Project: [Libft] (https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft)
+- [ft_memccpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memccpy.c)
+- [ft_memcpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memcpy.c)
+- [ft_memmove.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memmove)
+
+
+
+-Project: [Libft](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft)
 
 ## Student
 
