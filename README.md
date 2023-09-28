@@ -91,7 +91,7 @@ void	ft_bzero(void *restrict src, unsigned int n);
 
 ft_memccpy is a C function that is used to copy memory from one location to another until a specified character is encountered.
 ```
-void	ft_bzero(void *restrict src, unsigned int n);
+void	*ft_memccpy(void *restrict dest, const void *restrict src, int c, unsigned int n);
 ```
 
 
@@ -99,18 +99,24 @@ void	ft_bzero(void *restrict src, unsigned int n);
 
 ft_memcpy is a C function that is used to copy memory from one location to another.
 ```
-void	ft_bzero(void *restrict src, unsigned int n);
+void	*ft_memcpy(void *restrict dest, void const *restrict src, unsigned int n);
 ```
 
 
-- [ft_memmove.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memmove)
+- [ft_memmove.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memmove.c)
 
-ft_memmove is a C function that is used to copy memory from one location to another but in a safer way because take in count the overlap
+ft_memmove is a C function that is used to copy memory from one location to another but in a safer way because take in count the overlap.
 ```
-void	ft_bzero(void *restrict src, unsigned int n);
+void *ft_memmove(void *restrict dest, const void *restrict src, unsigned int n);
 ```
 
 
+- [ft_memset.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/srcs/ft_memset.c)
+
+ft_memset is a C function that is used set block of memory to a specific values.
+```
+void *ft_memmove(void *restrict dest, const void *restrict src, unsigned int n);
+```
 
 -Project: [Libft](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft)
 
