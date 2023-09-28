@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:57:51 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 23:41:22 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/28 23:53:20 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_putchar_(char *str, int n)
 {
-	while (n-- > 0)
+	while (n-- > 0 && *str)
 		write(1, &(*str++), 1);
 	write(1, "\n", 1);
 }
@@ -42,8 +42,7 @@ int	main(void)
 	ft_memset(teste, 'c', 10);
 	ft_putchar_(teste, 10);
 
-	ft_strchr(teste, 'c');
-	ft_putchar_(teste, 10);
+	ft_putchar_(ft_strchr(teste, 'c'), 10);
 
 	ft_strlcat(teste, "dasd", 10);
 	ft_putchar_(teste, 10);
@@ -53,6 +52,8 @@ int	main(void)
 
 	ft_strlen(teste);
 	ft_putchar_(teste, 10);
+
+	ft_putchar_(ft_strrchr(teste, 's'), 10);
 
 	return (0);
 
