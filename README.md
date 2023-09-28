@@ -142,13 +142,13 @@ void *ft_memmove(void *restrict dest, const void *restrict src, unsigned int n);
 ### Wiki Libft
 
 
-| Function:             | definition                                                                      |
-| :-------------------- | :------------------------:                                                      |
+| Function:             | definition                |
+| :-------------------- | :------------------------:|
 | ft_bzero              | sets a block of memory to zero|
-| ft_memccpy            | used to copy memory from one location to another until a specified character    |
-| ft_memcpy             | used to copy memory from one location to another                                |
-| ft_memmove            | copy memory from one location to another but in a safer                         |
-| ft_memset             | used set block of memory to a specific values                                   |
+| ft_memccpy            | used to copy memory from one location to another until a specified character|
+| ft_memcpy             | used to copy memory from one location to another|
+| ft_memmove            | copy memory from one location to another but in a safer|
+| ft_memset             | used set block of memory to a specific values|
 
 
 
