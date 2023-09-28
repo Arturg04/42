@@ -6,11 +6,11 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:51:40 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 21:55:33 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/28 21:56:57 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memchr(const void *restrict src,
+void	*ft_memchr(const void *restrict src,
 					int c,
 					unsigned int n)
 {
