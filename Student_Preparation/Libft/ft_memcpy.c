@@ -5,10 +5,7 @@ void	*ft_memcpy(void *restrict dest, void const *restrict src, unsigned int n)
 
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
-	while (n > 0)
-	{
-		n--;
-		d[n] = s[n];
-	}
+	while (n-- > 0)
+		*d++ = *s++;
 	return (dest);
 }

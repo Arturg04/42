@@ -7,12 +7,11 @@ void	*ft_memccpy(void *restrict dest, const void *restrict src, int c, unsigned 
 	a = (unsigned char)c;
 	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
-	while (n > 0)
+	while (n-- > 0)
 	{
-		n--;
-		d[n] = s[n];
-		if (s[n] == a)
-			return ((void *)(dest + n));
+		*d++ = *s;
+		if (*s++ == a)
+			return ((void *)(d));
 	}
 	return ((void *)0);
 }
