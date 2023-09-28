@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:57:51 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 22:36:30 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/28 23:41:22 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,12 @@ int	main(void)
 	ft_putchar_(teste, 10);
 
 	ft_memset(teste, 'c', 10);
+	ft_putchar_(teste, 10);
+
+	ft_strchr(teste, 'c');
+	ft_putchar_(teste, 10);
+
+	ft_strlcat(teste, "dasd", 10);
 	ft_putchar_(teste, 10);
 
 	ft_strlcpy(teste, "TESTEteste", 10);
