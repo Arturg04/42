@@ -102,6 +102,24 @@ void	*ft_memccpy(void *restrict dest, const void *restrict src, int c, unsigned 
 
 
 
+- [ft_memchr.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memchr.c)
+
+ft_memchr
+```
+void	*ft_memchr(const void *restrict src, int c, unsigned int n);
+```
+
+
+
+- [ft_memcmp.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memcmp.c)
+
+ft_memcmp
+```
+int		ft_memcmp(const void *restrict str1, const void *restrict str2, unsigned int n);
+```
+
+
+
 - [ft_memcpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_memcpy.c)
 
 ft_memcpy is a C function that is used to copy memory from one location to another.
@@ -125,6 +143,23 @@ void *ft_memmove(void *restrict dest, const void *restrict src, unsigned int n);
 ft_memset is a C function that is used set block of memory to a specific values.
 ```
 void *ft_memmove(void *restrict dest, const void *restrict src, unsigned int n);
+```
+
+
+
+- [ft_strlcpy.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_strlcpy.c)
+
+ft_strlcpy 
+```
+unsigned int	ft_strlcpy(char *restrict dest, const char *restrict src, unsigned int size)```
+```
+
+
+- [ft_strlen.c](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft/ft_strlen.c)
+
+ft_strlen
+```
+unsigned int	ft_strlen(const char *restrict str);
 ```
 
 
