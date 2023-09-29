@@ -27,11 +27,7 @@ void    ft_putnbr(int nb)
         ft_putchar('-');
         negative *= -1;
     }
-    if (nb < 10 && nb > -10)
-    {
-        ft_putchar(nb % 10 * negative + 48);
-        return ;
-    }
-    ft_putnbr(nb / 10 * negative);
+    if (nb > 9 || nb < -9)
+	ft_putnbr(nb / 10 * negative);
     ft_putchar(nb % 10 * negative + 48);
 }
