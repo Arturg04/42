@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:51:01 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 23:49:42 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/29 23:33:27 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,5 +57,9 @@ unsigned int	ft_strlen(const char *restrict str);
 
 char			*ft_strrchr(const char *restrict str,
 					int c);
+
+char			*ft_strnstr(const char *restrict str,
+					const char *restrict locate,
+					unsigned int size);
 
 #endif
