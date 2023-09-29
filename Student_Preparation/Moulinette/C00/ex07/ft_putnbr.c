@@ -17,17 +17,21 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_putnbr(int nb)
+void    ft_putnbr(int nb)
 {
-	int	negative;
+    int    negative;
 
-	negative = 1;
-	if (nb < 0)
-	{
-		ft_putchar('-');
-		negative *= -1;
-	}
-	if (nb > 10 || nb < -10)
-		ft_putnbr(nb / 10 * negative);
-	ft_putchar(nb % 10 * negative + 48);
+    negative = 1;
+    if (nb < 0)
+    {
+        ft_putchar('-');
+        negative *= -1;
+    }
+    if (nb < 10 && nb > -10)
+    {
+        ft_putchar(nb % 10 * negative + 48);
+        return ;
+    }
+    ft_putnbr(nb / 10 * negative);
+    ft_putchar(nb % 10 * negative + 48);
 }
