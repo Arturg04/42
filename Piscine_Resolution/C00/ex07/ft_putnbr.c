@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/19 23:41:07 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/20 23:13:17 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/09/29 21:21:57 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_putnbr(int nb)
 		ft_putchar('-');
 		negative *= -1;
 	}
-	if (nb > 10 || nb < -10)
+	if (nb > 9 || nb < -9)
 		ft_putnbr(nb / 10 * negative);
 	ft_putchar(nb % 10 * negative + 48);
 }
