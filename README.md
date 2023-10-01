@@ -316,10 +316,8 @@ int	ft_tolower(int c);
 
 ft_toupper is a C function used to convert a given lowercase character to its corresponding uppercase.
 ```
-int	ft_toupper(int c); -->
-```
-
-
+int	ft_toupper(int c);
+``` -->
 
 -Project: [Libft](https://github.com/Arturg04/42/tree/main/Student_Preparation/Libft)
 
