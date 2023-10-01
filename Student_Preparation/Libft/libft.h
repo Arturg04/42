@@ -6,13 +6,14 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:51:01 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/29 23:33:27 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/01 17:12:22 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <stdlib.h>
 
 void			ft_bzero(void *restrict src,
 					unsigned int n);
@@ -61,5 +62,26 @@ char			*ft_strrchr(const char *restrict str,
 char			*ft_strnstr(const char *restrict str,
 					const char *restrict locate,
 					unsigned int size);
+
+int				ft_strncmp(const char *restrict str,
+					const char *restrict cmp,
+					unsigned int n);
+
+int				ft_atoi(const char *restrict nptr);
+
+int				ft_isalpha(int c);
+
+int				ft_isdigit(int c);
+
+int				ft_isalnum(int c);
+
+int				ft_isascii(int c);
+
+int				ft_isprint(int c);
+
+int				ft_tolower(int c);
+
+int				ft_toupper(int c);
+
 
 #endif
