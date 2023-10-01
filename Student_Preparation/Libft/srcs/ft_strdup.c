@@ -1,42 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/30 12:05:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/01 20:00:04 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/10/01 20:16:07 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/01 20:24:09 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft.h"
 
-int	ft_atoi(const char *restrict nptr)
+char	*ft_strdup(const char *restrict str)
 {
-	int	res;
-	int	neg;
+	char	*restrict	s;
+	unsigned int		i;
 
-	res = 0;
-	neg = 1;
-	while (*nptr == ' ')
-		nptr++;
-	if (*nptr == '-' || *nptr == '+')
-	{
-		if (*nptr == '-')
-			neg = -neg;
-		nptr++;
-	}
-	while (ft_isdigit(*nptr))
-	{
-		if (res > (INT_MAX / 10)
-			|| (res == INT_MAX / 10 && *nptr - '0' > '7'))
-		{
-			if (neg > 0)
-				return (INT_MAX);
-			return (INT_MIN);
-		}
-		res = res * 10 + *(nptr++) - '0';
-	}
-	return (res * neg);
+	i = 0;
+	s = malloc(ft_strlen(str) + 1);
+	if (!s)
+		return ((char *)0);
+	while (*str)
+		s[i++] = *str++;
+	s[i] = 0;
+	return (s);
 }

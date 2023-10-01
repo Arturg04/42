@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:51:01 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/01 17:12:22 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/01 20:25:14 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+
+# define INT_MAX 2147483647
+# define INT_MIN -2147483648
 
 void			ft_bzero(void *restrict src,
 					unsigned int n);
@@ -83,5 +86,9 @@ int				ft_tolower(int c);
 
 int				ft_toupper(int c);
 
+void			*ft_calloc(unsigned int nmemb,
+					unsigned int size);
+
+char			*ft_strdup(const char *restrict str);
 
 #endif
