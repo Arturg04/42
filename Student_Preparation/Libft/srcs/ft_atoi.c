@@ -6,11 +6,11 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 12:05:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/01 20:00:04 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/01 21:20:26 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "libft.h"
 
 int	ft_atoi(const char *restrict nptr)
 {

@@ -6,11 +6,11 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 20:16:07 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/01 20:24:09 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/01 21:16:43 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *restrict str)
 {
