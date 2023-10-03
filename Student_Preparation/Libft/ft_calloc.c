@@ -6,14 +6,13 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 17:15:53 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:07 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:47:08 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(unsigned int nmemb,
-				unsigned int size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*restrict mem;
 

@@ -6,13 +6,15 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:54:25 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:26 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:48:26 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 void	*ft_memmove(void *restrict dest,
 						const void *restrict src,
-						unsigned int n)
+						size_t n)
 {
 	unsigned char	*restrict	s;
 	unsigned char	*restrict	d;

@@ -6,16 +6,18 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 23:07:07 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:41 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:51:48 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strnstr(const char *restrict str,
 				const char *restrict locate,
-				unsigned int size)
+				size_t size)
 {
-	unsigned int		i;
-	unsigned int		j;
+	size_t				i;
+	size_t				j;
 	char	*restrict	s;
 
 	s = (char *)str;

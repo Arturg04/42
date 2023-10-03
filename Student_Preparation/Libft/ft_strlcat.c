@@ -6,15 +6,17 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 23:00:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:35 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:49:56 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcat(char *restrict dst,
+#include "libft.h"
+
+size_t	ft_strlcat(char *restrict dst,
 					const char *restrict src,
-					unsigned int size)
+					size_t size)
 {
-	unsigned int		i;
+	size_t	i;
 
 	i = 0;
 	while (dst[i] && i < size)

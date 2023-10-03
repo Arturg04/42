@@ -6,7 +6,7 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:51:01 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:46 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/03 22:05:21 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,61 +14,62 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stddef.h>
 
 # define FT_INT_MAX 2147483647
 # define FT_INT_MIN -2147483648
 
 void			ft_bzero(void *src,
-					unsigned int n);
+					size_t n);
 
 void			*ft_memccpy(void *dest,
 					const void *src,
 					int c,
-					unsigned int n);
+					size_t n);
 
 void			*ft_memchr(const void *src,
 					int c,
-					unsigned int n);
+					size_t n);
 
 int				ft_memcmp(const void *str1,
 					const void *str2,
-					unsigned int n);
+					size_t n);
 
 void			*ft_memcpy(void *dest,
 					void const *src,
-					unsigned int n);
+					size_t n);
 
 void			*ft_memmove(void *dest,
 					const void *src,
-					unsigned int n);
+					size_t n);
 
 void			*ft_memset(void *src,
 					int c,
-					unsigned int n);
+					size_t n);
 
 char			*ft_strchr(const char *str,
 					int c);
 
-unsigned int	ft_strlcat(char *dst,
+size_t			ft_strlcat(char *dst,
 					const char *src,
-					unsigned int size);
+					size_t size);
 
-unsigned int	ft_strlcpy(char *dest,
+size_t			ft_strlcpy(char *dest,
 					const char *src,
-					unsigned int size);
+					size_t size);
 
-unsigned int	ft_strlen(const char *str);
+size_t			ft_strlen(const char *str);
 
 char			*ft_strrchr(const char *str,
 					int c);
 
 char			*ft_strnstr(const char *str,
 					const char *locate,
-					unsigned int size);
+					size_t size);
 
 int				ft_strncmp(const char *str,
 					const char *cmp,
-					unsigned int n);
+					size_t n);
 
 int				ft_atoi(const char *nptr);
 
@@ -86,9 +87,11 @@ int				ft_tolower(int c);
 
 int				ft_toupper(int c);
 
-void			*ft_calloc(unsigned int nmemb,
-					unsigned int size);
+void			*ft_calloc(size_t nmemb,
+					size_t size);
 
 char			*ft_strdup(const char *str);
+
+char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
