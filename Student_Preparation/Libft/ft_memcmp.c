@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 23:29:22 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 23:37:18 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/09/28 22:12:31 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/03 13:07:18 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *restrict str,
-				int c)
+int	ft_memcmp(const void *restrict str1,
+				const void *restrict str2,
+				unsigned int n)
 {
-	while (*str)
+	const unsigned char	*restrict s1;
+	const unsigned char	*restrict s2;
+
+	s1 = (const unsigned char *)str1;
+	s2 = (const unsigned char *)str2;
+	while (n-- > 0)
 	{
-		if (*str++ == (char)c)
-			return ((char *)(--str));
+		if (*s1++ != *s2)
+			return ((int)*(--s1) - (int)*(--s2));
 	}
-	return ((char *)0);
+	return (0);
 }

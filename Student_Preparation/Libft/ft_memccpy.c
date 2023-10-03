@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 23:43:09 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 23:52:15 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/09/28 21:47:57 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/03 13:22:45 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strrchr(const char *restrict str,
-				int c)
+void	*ft_memccpy(void *restrict dest,
+						const void *restrict src,
+						int c,
+						unsigned int n)
 {
-	unsigned int	i;
+	unsigned char				a;
+	unsigned char	*restrict	d;
+	unsigned char	*restrict	s;
 
-	i = 0;
-	while (str[i])
-		i++;
-	while (i-- > 0)
+	a = (unsigned char)c;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
+	while (n-- > 0)
 	{
-		if (str[i] == (char)c)
-			return ((char *)(str + i));
+		*d++ = *s;
+		if (*s++ == a)
+			return ((void *)(--d));
 	}
-	return ((char *)0);
+	return ((void *)0);
 }

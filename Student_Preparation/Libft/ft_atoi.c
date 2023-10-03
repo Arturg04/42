@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 12:05:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/01 21:41:58 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/03 13:27:49 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,8 @@ int	ft_atoi(const char *restrict nptr)
 		nptr++;
 	if (*nptr == '-' || *nptr == '+')
 	{
-		if (*nptr == '-')
+		if (*nptr++ == '-')
 			neg = -neg;
-		nptr++;
 	}
 	while (ft_isdigit(*nptr))
 	{

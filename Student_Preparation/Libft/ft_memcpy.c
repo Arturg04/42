@@ -1,32 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 21:47:57 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 21:53:39 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/09/28 21:53:52 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/03 13:24:25 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memccpy(void *restrict dest,
-						const void *restrict src,
-						int c,
+void	*ft_memcpy(void *restrict dest,
+						void const *restrict src,
 						unsigned int n)
 {
-	unsigned char				a;
-	unsigned char	*restrict	d;
 	unsigned char	*restrict	s;
+	unsigned char	*restrict	d;
 
-	a = (unsigned char)c;
-	d = (unsigned char *)dest;
 	s = (unsigned char *)src;
+	d = (unsigned char *)dest;
 	while (n-- > 0)
-	{
-		*d++ = *s;
-		if (*s++ == a)
-			return ((void *)(d));
-	}
-	return ((void *)0);
+		*d++ = *s++;
+	return (dest);
 }
