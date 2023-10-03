@@ -6,7 +6,7 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/03 21:43:58 by ade-pinh          #+#    #+#             */
-/*   Updated: 2023/10/03 23:11:09 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/03 23:13:37 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,16 +34,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		str[count] = s[count + start];
 	return (str);
 }
-
-// int main(void)
-// {
-// 	char *str = "01234";
-//  	size_t size = 10;
-//  	char *ret = ft_substr(str, 10, size);
-
-//  	if (!strncmp(ret, "", 1))
-//  	{
-//  		free(ret);
-//  	}
-//  	free(ret);
-// }
