@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 12:05:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 13:27:49 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/03 16:55:12 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,12 @@ int	ft_atoi(const char *restrict nptr)
 	}
 	while (ft_isdigit(*nptr))
 	{
-		if (res > (INT_MAX / 10)
-			|| (res == INT_MAX / 10 && *nptr > '7'))
+		if (res > (FT_INT_MAX / 10)
+			|| (res == FT_INT_MAX / 10 && *nptr > '7'))
 		{
 			if (neg > 0)
-				return (INT_MAX);
-			return (INT_MIN);
+				return (FT_INT_MAX);
+			return (FT_INT_MIN);
 		}
 		res = res * 10 + *(nptr++) - '0';
 	}
