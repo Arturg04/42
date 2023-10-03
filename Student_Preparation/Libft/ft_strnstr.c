@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 23:07:07 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/01 16:35:16 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/03 21:33:08 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ char	*ft_strnstr(const char *restrict str,
 		j++;
 	if (j == 0)
 		return (s);
-	while (*s && size > 0 && j > size)
+	while (*s && size > 0 && j <= size)
 	{
 		i = 0;
-		while (locate[i] == s[i])
+		while (locate[i] == s[i] && locate[i])
 			i++;
 		if (!locate[i])
 			return (s);

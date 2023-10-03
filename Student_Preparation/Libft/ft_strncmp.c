@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 11:45:20 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/30 12:05:05 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/03 20:45:47 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@ int	ft_strncmp(const char *restrict str,
 			const char *restrict cmp,
 			unsigned int n)
 {
-	while (*str && *cmp && n-- > 0)
+	while (n-- > 0)
 	{
-		if (*str++ != *cmp++)
-			return ((int)((*--str) - *(--cmp)));
+		if (*str != *cmp++)
+			return ((int)((unsigned char)(*str) - (unsigned char)*(--cmp)));
+		if (!*str++)
+			return (0);
 	}
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:26:26 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/09/28 22:33:50 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/03 20:22:53 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@ unsigned int	ft_strlcpy(char *restrict dest,
 	unsigned int	i;
 
 	i = 0;
-	while (src[i] && i < size)
+	while (src[i] && i + 1 < size)
 	{
 		dest[i] = src[i];
 		i++;
 	}
-	dest[i] = 0;
+	if (i < size)
+		dest[i] = 0;
 	while (src[i])
 		i++;
 	return (i);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:53:52 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 13:24:25 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/03 20:06:15 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memcpy(void *restrict dest,
 	unsigned char	*restrict	s;
 	unsigned char	*restrict	d;
 
+	if (!src && !dest)
+		return ((void *)0);
 	s = (unsigned char *)src;
 	d = (unsigned char *)dest;
 	while (n-- > 0)
