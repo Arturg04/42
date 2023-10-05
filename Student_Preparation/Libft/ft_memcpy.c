@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:53:52 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:48:13 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:06:30 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dest,
-						void const *restrict src,
+void	*ft_memcpy(void *dest,
+						void const *src,
 						size_t n)
 {
-	unsigned char	*restrict	s;
-	unsigned char	*restrict	d;
+	unsigned char	*s;
+	unsigned char	*d;
 
 	if (!src && !dest)
 		return ((void *)0);

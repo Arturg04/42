@@ -6,17 +6,17 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 01:00:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/04 22:09:21 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:08:30 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *restrict s1, char const *restrict set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*restrict	str;
-	size_t				i;
-	size_t				size;
+	char	*str;
+	size_t	i;
+	size_t	size;
 
 	if (!s1 ||!set)
 		return (NULL);

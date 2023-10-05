@@ -6,13 +6,13 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 22:11:19 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/05 18:28:31 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:07:13 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count(char const *restrict str, char c)
+static int	count(char const *str, char c)
 {
 	int	count;
 
@@ -31,11 +31,11 @@ static int	count(char const *restrict str, char c)
 	return (count);
 }
 
-char	**ft_split(char const *restrict s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char	**restrict	strs;
-	size_t				i;
-	size_t				size;
+	char	**strs;
+	size_t	i;
+	size_t	size;
 
 	strs = (char **)malloc((count(s, c) + 1) * sizeof(char *));
 	if (!strs)

@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:51:58 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:46:00 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:04:54 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *restrict src,
+void	ft_bzero(void *src,
 					size_t n)
 {
-	unsigned char	*restrict	s;
+	unsigned char	*s;
 
 	s = (unsigned char *)src;
 	while (n-- > 0)

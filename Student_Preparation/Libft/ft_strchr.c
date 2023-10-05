@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 23:29:22 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:38:33 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:07:19 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *restrict str,
+char	*ft_strchr(const char *str,
 				int c)
 {
 	while (*str)

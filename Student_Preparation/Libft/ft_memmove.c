@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 21:54:25 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:48:26 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:06:38 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *restrict dest,
-						const void *restrict src,
+void	*ft_memmove(void *dest,
+						const void *src,
 						size_t n)
 {
-	unsigned char	*restrict	s;
-	unsigned char	*restrict	d;
+	unsigned char	*s;
+	unsigned char	*d;
 
 	if (!dest && !src)
 		return ((void *)0);

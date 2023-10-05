@@ -3,21 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:12:31 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:48:02 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:06:20 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *restrict str1,
-				const void *restrict str2,
+int	ft_memcmp(const void *str1,
+				const void *str2,
 				size_t n)
 {
-	const unsigned char	*restrict s1;
-	const unsigned char	*restrict s2;
+	const unsigned char	*s1;
+	const unsigned char	*s2;
 
 	s1 = (const unsigned char *)str1;
 	s2 = (const unsigned char *)str2;

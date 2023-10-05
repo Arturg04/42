@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strjoin.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 00:48:43 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/05 21:07:39 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/10/05 20:35:23 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/05 21:05:36 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+t_list	*ft_lstlast(t_list *lst)
 {
-	char			*str;
-	unsigned int	i;
-	unsigned int	j;
-
-	j = 0;
-	i = ft_strlen(s1) + ft_strlen(s2);
-	str = (char *)malloc(i + 1);
-	if (!str)
-		return (NULL);
-	while (*s1)
-		str[j++] = *s1++;
-	while (*s2)
-		str[j++] = *s2++;
-	str[j] = 0;
-	return (str);
+	if (!lst || !lst->next)
+		return (lst);
+	return (ft_lstlast(lst->next));
 }
+
+// t_list	*ft_lstlast(t_list *lst)
+// {
+// 	t_list	*pnt;
+
+// 	if (!lst)
+// 		return (NULL);
+// 	pnt = lst;
+// 	while (pnt->next)
+// 		pnt = pnt->next;
+// 	return (pnt);
+// }

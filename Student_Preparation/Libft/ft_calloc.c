@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 17:15:53 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/03 21:47:08 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:05:02 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	void	*restrict mem;
+	void	*mem;
 
 	mem = malloc(nmemb * size);
 	if (!mem)

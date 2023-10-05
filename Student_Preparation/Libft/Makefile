@@ -12,6 +12,10 @@ SRCS = ft_atoi.c ft_calloc.c ft_isalpha.c ft_isdigit.c ft_memccpy.c ft_memcmp.c 
 
 OBJS = ${SRCS:.c=.o}
 
+BONUS_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c
+
+BONUS_OBJS = ${BONUS_SRCS:.c=.o}
+
 NAME = libft.a
 
 all:		${NAME}
@@ -22,6 +26,9 @@ all:		${NAME}
 ${NAME}:	${OBJS}
 			${AR} ${NAME} ${OBJS}
 
+bonus:		$(OBJS) $(BONUS_OBJS)
+			${AR} $(NAME) $(OBJS) $(BONUS_OBJS)
+
 clean:
 			${RM} ${OBJS}
 
@@ -30,4 +37,4 @@ fclean:		clean
 
 re:			fclean ${NAME}
 
-.phony: clean fclean
+.phony: all clean fclean re bonus

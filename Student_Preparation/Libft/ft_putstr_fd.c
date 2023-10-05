@@ -6,13 +6,13 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:26:08 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/05 19:28:35 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:07:00 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *restrict s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	while (*s)
 		ft_putchar_fd(*s++, fd);

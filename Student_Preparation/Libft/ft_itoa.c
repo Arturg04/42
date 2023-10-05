@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 18:27:59 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/05 18:50:27 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/05 21:05:17 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ static	int	count(int n)
 
 char	*ft_itoa(int n)
 {
-	int					neg;
-	int					size;
-	char	*restrict	str;
+	int		neg;
+	int		size;
+	char	*str;
 
 	neg = 1;
 	if (n == 0)
