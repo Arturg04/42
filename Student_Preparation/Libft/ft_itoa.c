@@ -1,36 +1,55 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strtrim.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 01:00:45 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/04 22:09:21 by Arturg04         ###   ########.fr       */
+/*   Created: 2023/10/05 18:27:59 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/05 18:50:27 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strtrim(char const *restrict s1, char const *restrict set)
+static	int	count(int n)
 {
-	char	*restrict	str;
-	size_t				i;
-	size_t				size;
+	int	size;
 
-	if (!s1 ||!set)
-		return (NULL);
-	i = 0;
-	size = ft_strlen(s1);
-	while (ft_strchr(set, s1[i]) && i < size)
-		i++;
-	if (i == size--)
-		return (ft_strdup(""));
-	while (ft_strchr(set, s1[size]) && size + 1 > 0)
-		size--;
-	str = malloc(size - i + 2);
+	size = 0;
+	while (n != 0)
+	{
+		size++;
+		n /= 10;
+	}
+	return (size);
+}
+
+char	*ft_itoa(int n)
+{
+	int					neg;
+	int					size;
+	char	*restrict	str;
+
+	neg = 1;
+	if (n == 0)
+		return (ft_strdup("0"));
+	size = count(n);
+	if (n < 0)
+	{
+		neg = -neg;
+		size++;
+	}
+	str = malloc(size + 1);
 	if (!str)
 		return (NULL);
-	ft_strlcpy(str, &s1[i], size - i + 2);
+	str[size--] = 0;
+	while (n != 0)
+	{
+		str[size--] = n % 10 * neg + 48 ;
+		n /= 10;
+	}
+	if (size == 0)
+		str[0] = '-';
 	return (str);
 }

@@ -6,7 +6,7 @@
 /*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 22:51:01 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/04 00:58:35 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/05 18:37:34 by Arturg04         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,5 +95,11 @@ char			*ft_strdup(const char *str);
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 
 char			*ft_strjoin(char const *s1, char const *s2);
+
+char			*ft_strtrim(char const *s1, char const *set);
+
+char			**ft_split(char const *restrict s, char c);
+
+char			*ft_itoa(int n);
 
 #endif
