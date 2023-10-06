@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: Arturg04 <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 22:11:19 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/05 21:07:13 by Arturg04         ###   ########.fr       */
+/*   Updated: 2023/10/06 20:32:44 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ char	**ft_split(char const *s, char c)
 			strs[i++] = ft_substr(s, 0, size);
 			s = s + size;
 		}
-		while (*s == c)
+		while (*s == c && *s)
 			s++;
 	}
 	strs[i] = NULL;
