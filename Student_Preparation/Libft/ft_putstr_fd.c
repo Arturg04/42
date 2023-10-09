@@ -6,7 +6,7 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:26:08 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/06 18:35:15 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/07 21:27:48 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (fd < 0)
+		return ;
 	while (*s)
 		ft_putchar_fd(*s++, fd);
 }

@@ -6,7 +6,7 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/05 19:30:40 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/06 20:46:48 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/07 21:27:41 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	int	neg;
 
+	if (fd < 0)
+		return ;
 	neg = 1;
 	if (n < 0)
 	{

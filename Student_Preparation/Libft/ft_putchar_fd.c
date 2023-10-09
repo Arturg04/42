@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 19:17:17 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/06 18:35:11 by ade-pinh         ###   ########.fr       */
+/*   Created: 2023/10/07 21:22:54 by ade-pinh          #+#    #+#             */
+/*   Updated: 2023/10/07 21:27:34 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd < 0)
+		return ;
 	write(fd, &c, 1);
 }

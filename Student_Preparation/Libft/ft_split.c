@@ -6,7 +6,7 @@
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 22:11:19 by Arturg04          #+#    #+#             */
-/*   Updated: 2023/10/06 20:32:44 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/07 21:08:50 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	**ft_split(char const *s, char c)
 	size_t	i;
 	size_t	size;
 
-	strs = (char **)malloc((count(s, c) + 1) * sizeof(char *));
+	strs = malloc((count(s, c) + 1) * sizeof(char *));
 	if (!strs)
 		return (NULL);
 	i = 0;
@@ -55,6 +55,6 @@ char	**ft_split(char const *s, char c)
 		while (*s == c && *s)
 			s++;
 	}
-	strs[i] = NULL;
+	strs[i] = 0;
 	return (strs);
 }
