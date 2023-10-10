@@ -6,11 +6,14 @@
 /*   By: ade-pinh <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/10 08:08:58 by ade-pinh          #+#    #+#             */
-/*   Updated: 2023/10/10 08:09:19 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/10 08:22:06 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_printf_char(char	*str)
+int	ft_printf_char(char c, int fd)
 {
-
+	if (fd < 0)
+		return (0);
+	write(fd, &c, 1);
+	return (1);
 }
