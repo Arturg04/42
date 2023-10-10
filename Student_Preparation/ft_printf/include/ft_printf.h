@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 16:44:49 by ade-pinh          #+#    #+#             */
-/*   Updated: 2023/10/09 19:25:56 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/10 08:18:00 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,5 +19,7 @@
 # include "../Libft/libft.h"
 
 int	ft_printf(const char *str, ...);
+int	ft_printf_str(char	*str);
+
 
 #endif

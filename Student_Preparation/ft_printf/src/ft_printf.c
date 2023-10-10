@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 16:44:55 by ade-pinh          #+#    #+#             */
-/*   Updated: 2023/10/09 20:13:57 by ade-pinh         ###   ########.fr       */
+/*   Updated: 2023/10/10 08:18:01 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_params(char	c,va_list list)
+int	ft_params(char c,va_list list)
 {
 	(void)list;
 	if (c == 'c')

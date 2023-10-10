@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf_putstr.c                                 :+:      :+:    :+:   */
+/*   ft_print_hex.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/09 19:30:17 by ade-pinh          #+#    #+#             */
-/*   Updated: 2023/10/09 19:38:52 by ade-pinh         ###   ########.fr       */
+/*   Created: 2023/10/10 08:14:32 by ade-pinh          #+#    #+#             */
+/*   Updated: 2023/10/10 08:16:11 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_printf_putstr(char	*str)
+int	ft_print_hex_lower(int	num)
+{
+
+}
+
+int	ft_print_hex_upper(int	num)
 {
 
 }
