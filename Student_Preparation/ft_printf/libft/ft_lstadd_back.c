@@ -1,20 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/08 21:44:53 by ade-pinh          #+#    #+#             */
-/*   Updated: 2023/10/09 22:46:16 by ade-pinh         ###   ########.fr       */
+/*   Created: 2023/10/05 20:44:42 by Arturg04          #+#    #+#             */
+/*   Updated: 2023/10/06 18:34:46 by ade-pinh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	main(void)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	ft_printf("cspdiuxX %c %s %p %d %i cspdiuxX %u %x %X %%\n", 42, "42", "42", 42, 42, 42, 42, 42);
-	printf("cspdiuxX %c %s %p %d %i %u %x %X %%\n", 42, "42", "42", 42, 42, 42, 42, 42);
-	return (0);
+	if (lst)
+	{
+		if (*lst)
+			ft_lstlast(*lst)->next = new;
+		else
+			*lst = new;
+	}
 }
