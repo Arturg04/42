@@ -3,24 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ade-pinh <artur.13.goncalves@gmail.com>    +#+  +:+       +#+        */
+/*   By: ade-pinh <ade-pinh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 16:44:55 by ade-pinh          #+#    #+#             */
-<<<<<<< HEAD:Student_Preparation/ft_printf/ft_printf.c
 /*   Updated: 2023/10/11 23:14:33 by ade-pinh         ###   ########.fr       */
-=======
-/*   Updated: 2023/10/10 08:18:01 by ade-pinh         ###   ########.fr       */
->>>>>>> cb1554b951bed7f31b0dca6c5bcef97a1d82658b:Student_Preparation/ft_printf/src/ft_printf.c
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-<<<<<<< HEAD:Student_Preparation/ft_printf/ft_printf.c
 unsigned int	ft_params(char c, va_list list, int fd)
-=======
-int	ft_params(char c,va_list list)
->>>>>>> cb1554b951bed7f31b0dca6c5bcef97a1d82658b:Student_Preparation/ft_printf/src/ft_printf.c
 {
 	if (c == 'c')
 		return (ft_print_char(va_arg(list, int), fd));
